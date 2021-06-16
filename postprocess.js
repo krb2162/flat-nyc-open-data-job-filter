@@ -10,7 +10,7 @@ const json = await readJSON(filename)
 console.log(json)
 
 // Step 2: Filter specific data we want to keep and write to a new JSON file
-const jobs = Object.values(json.bpi); // convert property values into an array
+await const jobs = Object.values(json.bpi); // convert property values into an array
 // const filteredjobs = jobss.map(rate => ({ 
 //     currency: rate.description,
 //     bitcoinRate: rate.rate
