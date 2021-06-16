@@ -26,3 +26,4 @@ jobs:
         with:
           http_url: https://data.cityofnewyork.us/resource/ic3t-wcy2.json # The data to fetch every 5 minutes
           downloaded_filename: nyc-open-job-filings.json # The http_url gets saved and renamed in our repository as btc-price.json
+          postprocess: postprocess.js
