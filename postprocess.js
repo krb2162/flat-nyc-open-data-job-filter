@@ -18,7 +18,7 @@ const jobs = Object.values(json); // convert property values into an array
 const filteredjobs = jobs.slice(1,7);
 
 const filter2jobs = filteredjobs.map(joblocation => ({
-      borough: borough
+      borough: joblocation.borough
 }));
 // // Step 3. Write a new JSON file with our filtered data
 const newFilename = `btc-price-postprocessed.json` // name of a new file to be saved
