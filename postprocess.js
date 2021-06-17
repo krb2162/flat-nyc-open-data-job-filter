@@ -19,7 +19,7 @@ const filteredjobs = jobs.slice(1,7);
 
 const filter2jobs = filteredjobs.map(joblocation => ({
       borough: borough,
-      Street: Street Name
+      Street: lot
 }));
 // // Step 3. Write a new JSON file with our filtered data
 const newFilename = `btc-price-postprocessed.json` // name of a new file to be saved
