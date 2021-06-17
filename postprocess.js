@@ -16,7 +16,12 @@ const jobs = Object.values(json); // convert property values into an array
 //     bitcoinRate: rate.rate
 // }));
 const filteredjobs = jobs.slice(1,7);
+
+const filter2jobs = filteredjobs.map(joblocation => ({
+      borough: borough,
+      Street: Street Name
+}));
 // // Step 3. Write a new JSON file with our filtered data
 const newFilename = `btc-price-postprocessed.json` // name of a new file to be saved
-await writeJSON(newFilename, filteredjobs) // create a new JSON file with just the Bitcoin price
+await writeJSON(newFilename, filter2jobs) // create a new JSON file with just the Bitcoin price
 console.log("Wrote a post process file")
